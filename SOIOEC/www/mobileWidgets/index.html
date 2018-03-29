@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>壁纸搜图汇,让你的📱更炫酷！</title>
+            <meta name="description" content="Hello,My WallPaper">
+                <meta name="keywords" content="Create By SOIOEC">
+                    <!--<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">-->
+                    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui" />
+                    <meta name="apple-mobile-web-app-capable" content="yes">
+                        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+                            <meta name="format-detection" content="telephone=no">
+                                <link rel="stylesheet" href="css/guide.css"/>
+                                <link rel="stylesheet" href="css/animate.css"/>
+                    <!--<script type = "text/javascript" src = "../../cordova.js"></script>-->
+                    <script type="text/javascript" src="../cordova.js"></script>
+
+    </head>
+    <body>
+        <div id="wrapper" class="content">
+            <div class="wrapper">
+                <ul class="container">
+                    <!-- 第一屏 -->
+                    <li class="page page0">
+                        <div class="content">
+                            <h2>1:保存壁纸到到手机相册</h2>
+<!--                            <h2>太酷了</h2>-->
+                            <p>
+                            <span class="y1"></span>
+                            <span class="y2"></span>
+                            <span class="y3"></span>
+                            
+                            </p>
+                            <p>
+                            <em class="no1"></em>
+                            <em class="no2"></em>
+                            <em class="no3"></em>
+                            <em class="no4"></em>
+                            <em class="no5"></em>
+                            </p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p>
+                            <i class="fly"></i>
+                            <i class="line"></i>
+                            </p>
+                            <div class="icos_arrow"></div>
+<!--                            <h3>如存在任何问题,请发送邮件至官方邮箱sulierjim@163.com</h3>-->
+                        </div>
+                    </li>
+                    <!-- 第一屏-->
+                    <li class="page page1">
+                        <div class="content hide common">
+<!--                            <h1>私人定制</h1>-->
+                            <h2>2:进入设置->壁纸</h2>
+                            <p>
+                            <span class="y1"></span>
+                            <span class="y2"></span>
+                            <span class="y3"></span>
+                            <span class="y4"></span>
+                            </p>
+                            <p>
+                            <em class="no1"></em>
+                            <em class="no2"></em>
+                            </p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            
+                            <h3>如存在任何问题,请发送邮件至官方邮箱sulierjim@163.com</h3>
+                            <div class="icos_arrow"></div>
+                        </div>
+                    </li>
+                    
+                    <!-- wei -->
+                    <li class="page page2">
+                        <div class="content hide">
+                            <h2>3:选取新的壁纸(可双指控制图片缩放)</h2>
+<!--                            <h2>宜信优质债权安心购</h2>-->
+                            <p>
+                            <span class="y1"></span>
+                            <span class="y2"></span>
+                            <span class="y4"></span>
+                            
+                            </p>
+                            <p>
+                            <em class="no1"></em>
+                            <em class="no2"></em>
+                            </p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            
+                            <p>
+<!--                            <a href="javascript:;">注册开店</a>-->
+<!--                            <a href="javascript:;">立即登录</a>-->
+                            </p>
+<!--                                   <h3>如存在任何问题,请发送邮件至官方邮箱sulierjim@163.com</h3>-->
+                        </div>
+                    </li>
+                    <!-- wei -->
+                </ul>
+            </div>
+        </div>
+        <div class="landscape">
+            <div class="iphone"></div>
+            <div class="iphone_text"></div>
+        </div>
+        <script type="text/javascript" src="guide.js"></script>
+        <script type="text/javascript">
+            
+            var wrapper = document.getElementById('wrapper');
+            var aBtn = document.getElementsByClassName('page2')[0].getElementsByTagName('a');
+            
+            halo.use('yscroll', 'loader', function(m){
+                     console.log(m);
+                     var loader = new m.loader(['img/y3.png','img/icon.png','img/y1.png','img/y2.png']).loadend(function(){
+                                                                                                                if(this._index == 4){
+                                                                                                                m.removeClass(wrapper, 'hide');
+                                                                                                                }
+                                                                                                                }).complete(function(){
+                                                                                                                            var _last_idx = 0;
+                                                                                                                            var wrapper_scroll = new m.yscroll('.wrapper', {
+                                                                                                                                                               Scontainer : '.container',
+                                                                                                                                                               hScroll : false,
+                                                                                                                                                               vScroll : true,
+                                                                                                                                                               momentum : true,
+                                                                                                                                                               bounce : false,
+                                                                                                                                                               snap: true,
+                                                                                                                                                               scrollBefore: function(name, e){
+                                                                                                                                                               if(name.target == aBtn[0]){
+                                                                                                                                                               //window.open("http://www.baidu.com/",'')
+                                                                                                                                                      //alert('注册开店');
+                                                                                                                                                                   aBtn[1].style.color = "#fff";
+                                                                                                                                                        aBtn[0].style.color = "#0f0";
+                                                                                                                                                               cordova.exec(null,null,"HaleyPlugin","guidegotolabel",["guide_Flags","regist"]);
+                                                                                                                                                               }
+                                                                                                                                                               if(name.target == aBtn[1]){
+                                                                                                                                                               //alert('立即登录');
+                                                                                                                                                                   aBtn[0].style.color = "#fff";
+                                                                                                                                                                   aBtn[1].style.color = "#0f0";
+
+                                                                                                                                                                   cordova.exec(null,null,"HaleyPlugin","guidegotolabel",["guide_Flags","login"]);
+                                                                           
+                                                                                                                                                               }
+                                                                                                                                                               },
+                                                                                                                                                               onScroll: function(name, obj){
+                                                                                                                                                               },
+                                                                                                                                                               onTouchEnd: function(name, obj){
+                                                                                                                                                               },
+                                                                                                                                                               scrollEnd: function(index){
+                                                                                                                                                               var pages = this.$li;
+                                                                                                                                                               for (var i = 0; i < pages.length; i++) {
+                                                                                                                                                               halo.util.addClass(pages[i].querySelector('.content'), 'hide');      
+                                                                                                                                                               };
+                                                                                                                                                               halo.util.removeClass(pages[index].querySelector('.content'), 'hide');
+                                                                                                                                                               }
+                                                                                                                                                               });
+                                                                                                                            });
+                     });
+                     
+                     aBtn[0].onclick = function(){
+                         //alert(11);
+                         //window.open("http://www.baidu.com/",'')
+                     }
+        
+        
+            </script>
+    </body>
+</html>
