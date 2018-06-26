@@ -63,8 +63,6 @@
 
 @interface BANetManagerCache : NSObject
 
-
-
 /**
  异步缓存网络数据,根据请求的 url 与 parameters
  
