@@ -8,7 +8,7 @@
 
 #import "SettingViewController.h"
 #import "EnshiredController.h"
-#import "APPObject.h"
+#import "APPDataEntity.h"
 #import "NetWorkManager.h"
 #import "IPhoneRelates.h"
 #import <UMSocialCore/UMSocialCore.h>
@@ -52,7 +52,7 @@ static CGFloat maxCache = 20;  //10M
 }
 -(void)loadMoreUIs
 {
-    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [APPObject defaultApp].width, [APPObject defaultApp].height) style:UITableViewStyleGrouped];
+    UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [APPDataEntity defaultApp].width, [APPDataEntity defaultApp].height) style:UITableViewStyleGrouped];
     tableView.dataSource = self;
     tableView.delegate   = self;
     self.moreTableView = tableView;
@@ -64,7 +64,7 @@ static CGFloat maxCache = 20;  //10M
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     NSString *title = [self.items objectAtIndex:section][@"name"];
-    UILabel *header = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, [APPObject defaultApp].width, 35)];
+    UILabel *header = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, [APPDataEntity defaultApp].width, 35)];
     [header setText:title];
     [header setTextAlignment:NSTextAlignmentCenter];
     return header;

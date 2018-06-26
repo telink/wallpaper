@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "GuideController.h"
-#import "APPObject.h"
+#import "APPDataEntity.h"
 #import <JWLaunchAd/JWLaunchAd.h>
 #import "AFNetworking.h"
 #import "NetWorkManager.h"

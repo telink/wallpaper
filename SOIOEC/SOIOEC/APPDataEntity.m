@@ -6,9 +6,9 @@
 //  Copyright © 2014年 sulier_J. All rights reserved.
 //
 
-#import "APPObject.h"
+#import "APPDataEntity.h"
 
-@implementation APPObject
+@implementation APPDataEntity
 -(CGFloat)width
 {
     if (!_width) {
@@ -35,13 +35,13 @@
 
 }
 
-+(APPObject *)defaultApp
++(APPDataEntity *)defaultApp
 {
-    static APPObject *manager = nil;
+    static APPDataEntity *manager = nil;
     static dispatch_once_t token;
     dispatch_once(&token,^{
         if(manager == nil){
-           manager = [[APPObject alloc]init];
+           manager = [[APPDataEntity alloc]init];
         }
     } );
     return manager;

@@ -14,7 +14,7 @@
 #import "EnshireImage.h"
 #import "IPhoneRelates.h"
 #import "UIImage+PECrop.h"
-#import "APPObject.h"
+#import "APPDataEntity.h"
 
 
 #if __has_include(<YYWebImage/YYWebImage.h>)

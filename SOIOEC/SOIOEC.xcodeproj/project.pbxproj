@@ -28,9 +28,9 @@
 		55091E5E1EFD93BD00262536 /* PrettyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55091E5A1EFD93BD00262536 /* PrettyCollectionCell.xib */; };
 		55091E5F1EFD93BD00262536 /* PrettyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55091E5A1EFD93BD00262536 /* PrettyCollectionCell.xib */; };
 		55091E601EFD93BD00262536 /* PrettyCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55091E5A1EFD93BD00262536 /* PrettyCollectionCell.xib */; };
-		550E31FF1EEBBFD3000E6859 /* APPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 550E31FE1EEBBFD3000E6859 /* APPObject.m */; };
-		550E32001EEBBFD3000E6859 /* APPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 550E31FE1EEBBFD3000E6859 /* APPObject.m */; };
-		550E32011EEBBFD3000E6859 /* APPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 550E31FE1EEBBFD3000E6859 /* APPObject.m */; };
+		550E31FF1EEBBFD3000E6859 /* APPDataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 550E31FE1EEBBFD3000E6859 /* APPDataEntity.m */; };
+		550E32001EEBBFD3000E6859 /* APPDataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 550E31FE1EEBBFD3000E6859 /* APPDataEntity.m */; };
+		550E32011EEBBFD3000E6859 /* APPDataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 550E31FE1EEBBFD3000E6859 /* APPDataEntity.m */; };
 		550E32091EEBFB56000E6859 /* GuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550E32081EEBFB56000E6859 /* GuideController.m */; };
 		550E320A1EEBFB56000E6859 /* GuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550E32081EEBFB56000E6859 /* GuideController.m */; };
 		550E320B1EEBFB56000E6859 /* GuideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550E32081EEBFB56000E6859 /* GuideController.m */; };
@@ -228,8 +228,8 @@
 		55091E581EFD93BD00262536 /* PrettyCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyCollectionCell.h; sourceTree = "<group>"; };
 		55091E591EFD93BD00262536 /* PrettyCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyCollectionCell.m; sourceTree = "<group>"; };
 		55091E5A1EFD93BD00262536 /* PrettyCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrettyCollectionCell.xib; sourceTree = "<group>"; };
-		550E31FD1EEBBFD3000E6859 /* APPObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPObject.h; sourceTree = "<group>"; };
-		550E31FE1EEBBFD3000E6859 /* APPObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPObject.m; sourceTree = "<group>"; };
+		550E31FD1EEBBFD3000E6859 /* APPDataEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPDataEntity.h; sourceTree = "<group>"; };
+		550E31FE1EEBBFD3000E6859 /* APPDataEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPDataEntity.m; sourceTree = "<group>"; };
 		550E32071EEBFB56000E6859 /* GuideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideController.h; sourceTree = "<group>"; };
 		550E32081EEBFB56000E6859 /* GuideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideController.m; sourceTree = "<group>"; };
 		55181CEC1F01E09500042F40 /* ResultsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsCell.h; sourceTree = "<group>"; };
@@ -496,10 +496,10 @@
 			isa = PBXGroup;
 			children = (
 				DA7266B51EF44EAC008C2895 /* additons */,
-				DA72669A1EF44B6D008C2895 /* 搜索 */,
-				DA72669B1EF44B84008C2895 /* 壁纸 */,
-				DA72669C1EF44B92008C2895 /* 推荐 */,
-				DA72669D1EF44BA4008C2895 /* 更多 */,
+				DA72669A1EF44B6D008C2895 /* 搜索模块 */,
+				DA72669B1EF44B84008C2895 /* 壁纸模块 */,
+				DA72669C1EF44B92008C2895 /* 推荐模块 */,
+				DA72669D1EF44BA4008C2895 /* 更多模块 */,
 			);
 			name = mainframe;
 			sourceTree = "<group>";
@@ -619,7 +619,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		55FBBFB91EEEACF200524290 /* Nets */ = {
+		55FBBFB91EEEACF200524290 /* netutls */ = {
 			isa = PBXGroup;
 			children = (
 				55FBBFA11EEEA4D000524290 /* BANetManager.h */,
@@ -629,7 +629,7 @@
 				55FBBFA51EEEA4D000524290 /* UIImage+CompressImage.h */,
 				55FBBFA61EEEA4D000524290 /* UIImage+CompressImage.m */,
 			);
-			name = Nets;
+			name = netutls;
 			sourceTree = "<group>";
 		};
 		DA4D642C1F04163800E5FA87 /* tls */ = {
@@ -657,11 +657,11 @@
 		DA6F9EFE1EEF0E0B009DA36F /* globalapis */ = {
 			isa = PBXGroup;
 			children = (
-				550E31FD1EEBBFD3000E6859 /* APPObject.h */,
-				550E31FE1EEBBFD3000E6859 /* APPObject.m */,
+				550E31FD1EEBBFD3000E6859 /* APPDataEntity.h */,
+				550E31FE1EEBBFD3000E6859 /* APPDataEntity.m */,
 				55FBBFCF1EEEB33200524290 /* NetWorkManager.h */,
 				55FBBFD01EEEB33200524290 /* NetWorkManager.m */,
-				55FBBFB91EEEACF200524290 /* Nets */,
+				55FBBFB91EEEACF200524290 /* netutls */,
 			);
 			name = globalapis;
 			sourceTree = "<group>";
@@ -697,7 +697,7 @@
 			name = tabframe;
 			sourceTree = "<group>";
 		};
-		DA72669A1EF44B6D008C2895 /* 搜索 */ = {
+		DA72669A1EF44B6D008C2895 /* 搜索模块 */ = {
 			isa = PBXGroup;
 			children = (
 				5577DD6C1EFF513E0083AF85 /* src */,
@@ -705,30 +705,30 @@
 				DA7266A61EF44DB2008C2895 /* Models */,
 				DA7266A21EF44D8F008C2895 /* Views */,
 			);
-			name = "搜索";
+			name = "搜索模块";
 			sourceTree = "<group>";
 		};
-		DA72669B1EF44B84008C2895 /* 壁纸 */ = {
+		DA72669B1EF44B84008C2895 /* 壁纸模块 */ = {
 			isa = PBXGroup;
 			children = (
 				DA7266A01EF44D77008C2895 /* WallPaperRelVC */,
 				DA7266A81EF44DD0008C2895 /* Models */,
 				DA7266A41EF44DA4008C2895 /* Views */,
 			);
-			name = "壁纸";
+			name = "壁纸模块";
 			sourceTree = "<group>";
 		};
-		DA72669C1EF44B92008C2895 /* 推荐 */ = {
+		DA72669C1EF44B92008C2895 /* 推荐模块 */ = {
 			isa = PBXGroup;
 			children = (
 				DA72669F1EF44D5F008C2895 /* RecomendVC */,
 				DA7266A71EF44DBD008C2895 /* Models */,
 				DA7266A31EF44D9D008C2895 /* RelViews */,
 			);
-			name = "推荐";
+			name = "推荐模块";
 			sourceTree = "<group>";
 		};
-		DA72669D1EF44BA4008C2895 /* 更多 */ = {
+		DA72669D1EF44BA4008C2895 /* 更多模块 */ = {
 			isa = PBXGroup;
 			children = (
 				55D8EACB1EFE0EC2005E2FE6 /* srcs */,
@@ -736,7 +736,7 @@
 				DA7266A91EF44DDD008C2895 /* models */,
 				DA7266A51EF44DAC008C2895 /* views */,
 			);
-			name = "更多";
+			name = "更多模块";
 			sourceTree = "<group>";
 		};
 		DA72669E1EF44D4E008C2895 /* searchvc */ = {
@@ -1204,7 +1204,7 @@
 				DA4FAFDE1EF0A36200C8D343 /* JQLabelInfo.m in Sources */,
 				DAD089801F0306F70030F3E3 /* KSYYImageManager.m in Sources */,
 				DA7266AC1EF44E4C008C2895 /* FoundationController.m in Sources */,
-				550E31FF1EEBBFD3000E6859 /* APPObject.m in Sources */,
+				550E31FF1EEBBFD3000E6859 /* APPDataEntity.m in Sources */,
 				DA7266961EF449B5008C2895 /* ZLCTabBarButton.m in Sources */,
 				DA4FAFE31EF0A46800C8D343 /* PicInfo.m in Sources */,
 				DA7266CC1EF44F71008C2895 /* WallPagesViewController.m in Sources */,
@@ -1249,7 +1249,7 @@
 				55091E5C1EFD93BD00262536 /* PrettyCollectionCell.m in Sources */,
 				550E320A1EEBFB56000E6859 /* GuideController.m in Sources */,
 				55FBBFAB1EEEA4D000524290 /* BANetManagerCache.m in Sources */,
-				550E32001EEBBFD3000E6859 /* APPObject.m in Sources */,
+				550E32001EEBBFD3000E6859 /* APPDataEntity.m in Sources */,
 				DA698CDE1EF8761A009F9CC9 /* AppDelegate.m in Sources */,
 				DA7266BE1EF44F21008C2895 /* BaseMainViewController.m in Sources */,
 				55091E211EFC915E00262536 /* ValueModel.m in Sources */,
@@ -1295,7 +1295,7 @@
 				55091E5D1EFD93BD00262536 /* PrettyCollectionCell.m in Sources */,
 				550E320B1EEBFB56000E6859 /* GuideController.m in Sources */,
 				55FBBFAC1EEEA4D000524290 /* BANetManagerCache.m in Sources */,
-				550E32011EEBBFD3000E6859 /* APPObject.m in Sources */,
+				550E32011EEBBFD3000E6859 /* APPDataEntity.m in Sources */,
 				DA698CDF1EF8761A009F9CC9 /* AppDelegate.m in Sources */,
 				DA7266BF1EF44F21008C2895 /* BaseMainViewController.m in Sources */,
 				55091E221EFC915E00262536 /* ValueModel.m in Sources */,

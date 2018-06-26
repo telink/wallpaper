@@ -8,7 +8,7 @@
 
 #import "ZLCHaleyPlugin.h"
 #import <UIKit/UIKit.h>
-#import "APPObject.h"
+#import "APPDataEntity.h"
 
 @implementation ZLCHaleyPlugin
     

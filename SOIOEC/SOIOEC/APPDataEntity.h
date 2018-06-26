@@ -18,9 +18,9 @@ static NSString *QQ_AppID = @"1106257172";
 static NSString *QQ_AppKey = @"VbGI4fUvvNKnpTZ5";
 static NSString *Sina_AppID = @"4071289178";
 static NSString *Sina_AppSecret = @"4d67d453b149200d2983576b1861daf2";
-@interface APPObject : NSObject
+@interface APPDataEntity  : NSObject
 @property(nonatomic,assign)CGFloat width;
 @property(nonatomic,assign)CGFloat height;
 @property(nonatomic,assign)CGRect  rect;
-+(APPObject *)defaultApp;
++(APPDataEntity*)defaultApp;
 @end
