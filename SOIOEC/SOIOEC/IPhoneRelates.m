@@ -65,33 +65,7 @@
     if ([platform isEqualToString:@"iPhone8,4"]) return @"iPhone5s";
     if ([platform isEqualToString:@"iPhone9,1"]) return @"iPhone7";
     if ([platform isEqualToString:@"iPhone9,2"]) return @"iPhone7xPlus";
-//    if ([platform isEqualToString:@"iPod1,1"])   return @"iPod Touch 1G";
-//    if ([platform isEqualToString:@"iPod2,1"])   return @"iPod Touch 2G";
-//    if ([platform isEqualToString:@"iPod3,1"])   return @"iPod Touch 3G";
-//    if ([platform isEqualToString:@"iPod4,1"])   return @"iPod Touch 4G";
-//    if ([platform isEqualToString:@"iPod5,1"])   return @"iPod Touch 5G";
-//    if ([platform isEqualToString:@"iPad1,1"])   return @"iPad 1G";
-//    if ([platform isEqualToString:@"iPad2,1"])   return @"iPad 2";
-//    if ([platform isEqualToString:@"iPad2,2"])   return @"iPad 2";
-//    if ([platform isEqualToString:@"iPad2,3"])   return @"iPad 2";
-//    if ([platform isEqualToString:@"iPad2,4"])   return @"iPad 2";
-//    if ([platform isEqualToString:@"iPad2,5"])   return @"iPad Mini 1G";
-//    if ([platform isEqualToString:@"iPad2,6"])   return @"iPad Mini 1G";
-//    if ([platform isEqualToString:@"iPad2,7"])   return @"iPad Mini 1G";
-//    if ([platform isEqualToString:@"iPad3,1"])   return @"iPad 3";
-//    if ([platform isEqualToString:@"iPad3,2"])   return @"iPad 3";
-//    if ([platform isEqualToString:@"iPad3,3"])   return @"iPad 3";
-//    if ([platform isEqualToString:@"iPad3,4"])   return @"iPad 4";
-//    if ([platform isEqualToString:@"iPad3,5"])   return @"iPad 4";
-//    if ([platform isEqualToString:@"iPad3,6"])   return @"iPad 4";
-//    if ([platform isEqualToString:@"iPad4,1"])   return @"iPad Air";
-//    if ([platform isEqualToString:@"iPad4,2"])   return @"iPad Air";
-//    if ([platform isEqualToString:@"iPad4,3"])   return @"iPad Air";
-//    if ([platform isEqualToString:@"iPad4,4"])   return @"iPad Mini 2G";
-//    if ([platform isEqualToString:@"iPad4,5"])   return @"iPad Mini 2G";
-//    if ([platform isEqualToString:@"iPad4,6"])   return @"iPad Mini 2G";
-//    if ([platform isEqualToString:@"i386"])      return @"iPhone Simulator";
-//    if ([platform isEqualToString:@"x86_64"])    return @"iPhone Simulator";
+
     if (platform) {
         return @"iPhone 7 Plus";
     }

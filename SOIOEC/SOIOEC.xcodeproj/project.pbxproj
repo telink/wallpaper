@@ -492,25 +492,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		55CBA9F41F2D17E90097752A /* subs */ = {
+		55CBA9F41F2D17E90097752A /* mainframe */ = {
 			isa = PBXGroup;
 			children = (
-				DA7266B51EF44EAC008C2895 /* Bases */,
+				DA7266B51EF44EAC008C2895 /* additons */,
 				DA72669A1EF44B6D008C2895 /* 搜索 */,
 				DA72669B1EF44B84008C2895 /* 壁纸 */,
 				DA72669C1EF44B92008C2895 /* 推荐 */,
 				DA72669D1EF44BA4008C2895 /* 更多 */,
 			);
-			name = subs;
+			name = mainframe;
 			sourceTree = "<group>";
 		};
-		55CBA9F51F2D18150097752A /* bases */ = {
+		55CBA9F51F2D18150097752A /* ancestry */ = {
 			isa = PBXGroup;
 			children = (
 				DA7266AA1EF44E4C008C2895 /* FoundationController.h */,
 				DA7266AB1EF44E4C008C2895 /* FoundationController.m */,
 			);
-			name = bases;
+			name = ancestry;
 			sourceTree = "<group>";
 		};
 		55CBA9FA1F2D4B950097752A /* foundationvc */ = {
@@ -565,7 +565,7 @@
 				55F4EF851ED7017600317556 /* AppDelegate.h */,
 				DA698CDC1EF8761A009F9CC9 /* AppDelegate.m */,
 				DA6F9F001EEF0E69009DA36F /* main */,
-				DA6F9EFE1EEF0E0B009DA36F /* unitiesAPIs */,
+				DA6F9EFE1EEF0E0B009DA36F /* globalapis */,
 				55F4EF8B1ED7017700317556 /* Main.storyboard */,
 				55F4EF931ED7017700317556 /* LaunchScreen.storyboard */,
 				55F4EF961ED7017700317556 /* Info.plist */,
@@ -654,7 +654,7 @@
 			name = pic_list;
 			sourceTree = "<group>";
 		};
-		DA6F9EFE1EEF0E0B009DA36F /* unitiesAPIs */ = {
+		DA6F9EFE1EEF0E0B009DA36F /* globalapis */ = {
 			isa = PBXGroup;
 			children = (
 				550E31FD1EEBBFD3000E6859 /* APPObject.h */,
@@ -663,54 +663,38 @@
 				55FBBFD01EEEB33200524290 /* NetWorkManager.m */,
 				55FBBFB91EEEACF200524290 /* Nets */,
 			);
-			name = unitiesAPIs;
+			name = globalapis;
 			sourceTree = "<group>";
 		};
 		DA6F9F001EEF0E69009DA36F /* main */ = {
 			isa = PBXGroup;
 			children = (
-				DA7266861EF448A4008C2895 /* Tab+Nav+Subs */,
+				DA7266861EF448A4008C2895 /* presents */,
 			);
 			name = main;
 			sourceTree = "<group>";
 		};
-		DA7266861EF448A4008C2895 /* Tab+Nav+Subs */ = {
+		DA7266861EF448A4008C2895 /* presents */ = {
 			isa = PBXGroup;
 			children = (
-				55CBA9F51F2D18150097752A /* bases */,
-				55CBA9F41F2D17E90097752A /* subs */,
-				DA72668B1EF448E7008C2895 /* views */,
-				DA72668A1EF448DD008C2895 /* models */,
-				DA7266891EF448D3008C2895 /* mainVC */,
+				55CBA9F51F2D18150097752A /* ancestry */,
+				55CBA9F41F2D17E90097752A /* mainframe */,
+				DA72668B1EF448E7008C2895 /* tabframe */,
 			);
-			name = "Tab+Nav+Subs";
+			name = presents;
 			sourceTree = "<group>";
 		};
-		DA7266891EF448D3008C2895 /* mainVC */ = {
+		DA72668B1EF448E7008C2895 /* tabframe */ = {
 			isa = PBXGroup;
 			children = (
 				DA7266971EF449D5008C2895 /* ZLCTabBarController.h */,
 				DA7266981EF449D5008C2895 /* ZLCTabBarController.m */,
-			);
-			name = mainVC;
-			sourceTree = "<group>";
-		};
-		DA72668A1EF448DD008C2895 /* models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = models;
-			sourceTree = "<group>";
-		};
-		DA72668B1EF448E7008C2895 /* views */ = {
-			isa = PBXGroup;
-			children = (
 				DA7266911EF449B5008C2895 /* ZLCTabBar.h */,
 				DA7266921EF449B5008C2895 /* ZLCTabBar.m */,
 				DA7266931EF449B5008C2895 /* ZLCTabBarButton.h */,
 				DA7266941EF449B5008C2895 /* ZLCTabBarButton.m */,
 			);
-			name = views;
+			name = tabframe;
 			sourceTree = "<group>";
 		};
 		DA72669A1EF44B6D008C2895 /* 搜索 */ = {
@@ -886,7 +870,7 @@
 			name = models;
 			sourceTree = "<group>";
 		};
-		DA7266B51EF44EAC008C2895 /* Bases */ = {
+		DA7266B51EF44EAC008C2895 /* additons */ = {
 			isa = PBXGroup;
 			children = (
 				DA7266D41EF450AA008C2895 /* GlobalMacroDefinition.h */,
@@ -894,7 +878,7 @@
 				DA4D642C1F04163800E5FA87 /* tls */,
 				DAD0896E1F0306BF0030F3E3 /* photosBrowser */,
 			);
-			name = Bases;
+			name = additons;
 			sourceTree = "<group>";
 		};
 		DA98B1B11EF89A52008EBCB2 /* 流水布局 */ = {
@@ -1144,9 +1128,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-SOIOEC/Pods-SOIOEC-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/Sina/SinaSDK/WeiboSDK.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialUI/UMSocialSDKResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1155,7 +1146,7 @@
 		};
 		5529A72D1EEAE8F300F85DCB /* copy www directory */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -1163,10 +1154,9 @@
 			name = "copy www directory";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "NODEJS_PATH=/usr/local/bin;NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find/usr/local/n/versions/node/* -maxdepth 0-type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select--print-path`/usr/share/xcs/Node/bin;PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH &&node cordova/lib/copy-www-build-step.js";
-			showEnvVarsInLog = 0;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
 		};
 		A5484BC2E868CD652CCF806D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1174,13 +1164,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SOIOEC-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1481,7 +1474,7 @@
 					"\"$(PROJECT_DIR)/CordovaLib/Classes/Public\"",
 				);
 				INFOPLIST_FILE = SOIOEC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
@@ -1492,6 +1485,8 @@
 					"-Objc-all_load",
 					"-Objc",
 					"$(inherited)",
+					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantem.FantemiOSApp2015;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1518,7 +1513,7 @@
 					"\"$(PROJECT_DIR)/CordovaLib/Classes/Public\"",
 				);
 				INFOPLIST_FILE = SOIOEC/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
@@ -1529,6 +1524,8 @@
 					"-Objc-all_load",
 					"-Objc",
 					"$(inherited)",
+					"-ObjC",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fantem.FantemiOSApp2015;
 				PRODUCT_NAME = "$(TARGET_NAME)";

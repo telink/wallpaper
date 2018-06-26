@@ -7,7 +7,6 @@
 //
 
 
-//#import <Cordova/CDV.h>
 #import <CDV.h>
 
 @interface ZLCHaleyPlugin : CDVPlugin
